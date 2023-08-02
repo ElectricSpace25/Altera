@@ -1,6 +1,5 @@
 package cyanite.altera.networking.packets;
 
-import cyanite.altera.AlteraMod;
 import cyanite.altera.util.AlignmentData;
 import cyanite.altera.util.IEntityDataSaver;
 import net.fabricmc.fabric.api.networking.v1.PacketSender;
@@ -13,13 +12,12 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Formatting;
 
 public class ChangeAlignmentC2SPacket {
-    public static void recieve(MinecraftServer server, ServerPlayerEntity player, ServerPlayNetworkHandler handler,
+    public static void receive(MinecraftServer server, ServerPlayerEntity player, ServerPlayNetworkHandler handler,
                                PacketByteBuf buf, PacketSender responseSender) {
         //This ONLY happens on the server
 
         //Change alignment
         int change = buf.readInt();
-        AlteraMod.LOGGER.info("Change: " + change);
         AlignmentData.changeAlignment((IEntityDataSaver) player, change);
 
         //Notify player

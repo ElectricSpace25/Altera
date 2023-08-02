@@ -18,13 +18,11 @@ public class ModModelPredicateProvider{
 
             //Corrupt Mirror
             if (((IEntityDataSaver) entity).getPersistentData().getInt("alignment") <= -5) {
-                AlteraMod.LOGGER.info("Corrupt Mirror");
                 return 0.0f;
             }
 
             //Pure Mirror
             if (((IEntityDataSaver) entity).getPersistentData().getInt("alignment") >= 5) {
-                AlteraMod.LOGGER.info("Pure Mirror");
                 return 1.0f;
             }
 
