@@ -21,4 +21,6 @@ public class AlteraMod implements ModInitializer {
 		ModItems.registerModItems();
 		ModMessages.registerC2SPackets();
 	}
+
+	//TODO: Get client to sync alignment with server when joining
 }

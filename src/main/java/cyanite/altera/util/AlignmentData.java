@@ -15,29 +15,15 @@ public class AlignmentData {
         return alignment;
     }
 
-    public static int addAlignment(IEntityDataSaver player, int amount) {
+    public static int changeAlignment(IEntityDataSaver player, int amount) {
         NbtCompound nbt = player.getPersistentData();
         int alignment = nbt.getInt("alignment");
         if (alignment + amount > 100) {
             alignment = 100;
-        } else {
-            alignment += amount;
-        }
-
-        nbt.putInt("alignment", alignment);
-
-        syncAlignment(alignment, (ServerPlayerEntity) player);
-
-        return alignment;
-    }
-
-    public static int removeAlignment(IEntityDataSaver player, int amount) {
-        NbtCompound nbt = player.getPersistentData();
-        int alignment = nbt.getInt("alignment");
-        if (alignment + amount < -100) {
+        } else if (alignment + amount < -100) {
             alignment = -100;
         } else {
-            alignment -= amount;
+            alignment += amount;
         }
 
         nbt.putInt("alignment", alignment);
