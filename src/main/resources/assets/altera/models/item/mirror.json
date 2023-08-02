@@ -1,0 +1,26 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "altera:item/mirror"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "alignment": 0
+      },
+      "model": "altera:item/mirror_corrupt"
+    },
+    {
+      "predicate": {
+        "alignment": 0.5
+      },
+      "model": "altera:item/mirror_neutral"
+    },
+    {
+      "predicate": {
+        "alignment": 1
+      },
+      "model": "altera:item/mirror_pure"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "altera:item/mirror",
+  "textures": {
+    "layer0": "altera:item/mirror_pure"
+  }
+}
