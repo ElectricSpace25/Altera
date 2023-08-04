@@ -4,9 +4,12 @@ import cyanite.altera.data.ModLootTableGenerator;
 import cyanite.altera.data.ModModelGenerator;
 import cyanite.altera.data.ModRecipeGenerator;
 import cyanite.altera.data.ModWorldGenerator;
+import cyanite.altera.world.ModConfiguredFeatures;
+import cyanite.altera.world.ModPlacedFeatures;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.minecraft.registry.RegistryBuilder;
+import net.minecraft.registry.RegistryKeys;
 
 public class AlteraModDataGenerator implements DataGeneratorEntrypoint {
 	@Override
@@ -21,6 +24,7 @@ public class AlteraModDataGenerator implements DataGeneratorEntrypoint {
 
 	@Override
 	public void buildRegistry(RegistryBuilder registryBuilder) {
-
+		registryBuilder.addRegistry(RegistryKeys.CONFIGURED_FEATURE, ModConfiguredFeatures::bootstrap);
+		registryBuilder.addRegistry(RegistryKeys.PLACED_FEATURE, ModPlacedFeatures::bootstrap);
 	}
 }

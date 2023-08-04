@@ -15,6 +15,8 @@ public class ModItems {
     
     //Items
     public static final Item MIRROR = registerItem("mirror", new MirrorItem(new FabricItemSettings().maxCount(1)));
+    public static final Item RAW_SILVER = registerItem("raw_silver", new Item(new FabricItemSettings()));
+    public static final Item SILVER_INGOT = registerItem("silver_ingot", new Item(new FabricItemSettings()));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(AlteraMod.MOD_ID, name), item);
@@ -22,6 +24,8 @@ public class ModItems {
 
     public static void addItemsToItemGroup() {
         addToItemGroup(ModItemGroup.ALTERA_GROUP, MIRROR);
+        addToItemGroup(ModItemGroup.ALTERA_GROUP, RAW_SILVER);
+        addToItemGroup(ModItemGroup.ALTERA_GROUP, SILVER_INGOT);
 
     }
 

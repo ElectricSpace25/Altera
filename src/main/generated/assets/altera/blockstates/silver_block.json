@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "altera:block/silver_block"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+// 1.20.1	2023-08-03T23:52:57.8843298	Altera/Model Definitions
+49cbb7d24ddafc16abd0312d8b711e02a2fddd72 assets\altera\models\item\silver_ingot.json
+5bd0d93cc787aa3b7658a4dc80df021ec87aaa07 assets\altera\models\item\deepslate_silver_ore.json
+7a8db8fc1dcc1aee069176f2d897516ca22663f6 assets\altera\models\item\silver_block.json
+2da6901e581f812ff3642bf99b8903bf8c7242c9 assets\altera\models\block\silver_ore.json
+229bc77575c7967a94e48306f7cf5df89d9d0022 assets\altera\models\item\silver_ore.json
+274a01fd4e51709a656ee70f1744a07c53a14cab assets\altera\models\block\silver_block.json
+dee6114dfa8ce0148ed57ea2d7a4152e4fd707de assets\altera\blockstates\silver_ore.json
+bd6b4a8791eb158e5c39cb6e54e1836ec5005fe5 assets\altera\blockstates\deepslate_silver_ore.json
+962c0513442589a8daef3bd4b7796136999d0c8e assets\altera\models\item\raw_silver.json
+f6a6b8019989d1253ab5efd85218c9a94aa58751 assets\altera\blockstates\silver_block.json
+b41205b41590154cb858dd7f514f789251a74fb3 assets\altera\models\block\deepslate_silver_ore.json

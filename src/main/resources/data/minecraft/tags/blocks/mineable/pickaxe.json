@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "altera:silver_ore",
+    "altera:deepslate_silver_ore",
+    "altera:silver_block"
+  ]
+}

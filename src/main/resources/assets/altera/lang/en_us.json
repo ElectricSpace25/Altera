@@ -1,3 +1,8 @@
 {
-  "item.altera.mirror": "Mirror"
+  "item.altera.mirror": "Mirror",
+  "item.altera.raw_silver": "Raw Silver",
+  "item.altera.silver_ingot": "Silver Ingot",
+  "block.altera.silver_ore": "Silver Ore",
+  "block.altera.deepslate_silver_ore": "Deepslate Silver Ore",
+  "block.altera.silver_block": "Block of Silver"
 }
