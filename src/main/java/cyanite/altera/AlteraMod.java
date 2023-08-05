@@ -1,12 +1,14 @@
 package cyanite.altera;
 
 import cyanite.altera.blocks.ModBlocks;
+import cyanite.altera.blocks.ModFlammableBlockRegistry;
 import cyanite.altera.items.ModItemGroup;
 import cyanite.altera.items.ModItems;
 import cyanite.altera.networking.ModMessages;
 import cyanite.altera.world.gen.ModWorldGeneration;
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -23,5 +25,6 @@ public class AlteraMod implements ModInitializer {
 		ModBlocks.registerModBlocks();
 		ModWorldGeneration.generateModWorldGen();
 		ModMessages.registerC2SPackets();
+		ModFlammableBlockRegistry.registerFlammableBlocks();
 	}
 }

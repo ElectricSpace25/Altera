@@ -1,12 +1,15 @@
 package cyanite.altera.blocks;
 
 import cyanite.altera.AlteraMod;
+import cyanite.altera.blocks.custom.GalaxyVinesBodyBlock;
+import cyanite.altera.blocks.custom.GalaxyVinesHeadBlock;
 import cyanite.altera.items.ModItemGroup;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
 import net.minecraft.block.enums.Instrument;
+import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
@@ -43,6 +46,26 @@ public class ModBlocks {
                     .requiresTool()
                     .mapColor(MapColor.IRON_GRAY)
                     .sounds(BlockSoundGroup.METAL)),
+                    ModItemGroup.ALTERA_GROUP);
+
+    public static final Block GALAXY_VINES = registerBlock("galaxy_vines",
+            new GalaxyVinesHeadBlock(FabricBlockSettings.create()
+                    .mapColor(MapColor.DARK_AQUA)
+                    .ticksRandomly().noCollision()
+                    .luminance(CaveVines.getLuminanceSupplier(14))
+                    .breakInstantly()
+                    .sounds(BlockSoundGroup.CAVE_VINES)
+                    .pistonBehavior(PistonBehavior.DESTROY)),
+                    ModItemGroup.ALTERA_GROUP);
+
+    public static final Block GALAXY_VINES_PLANT = registerBlock("galaxy_vines_plant",
+            new GalaxyVinesBodyBlock(FabricBlockSettings.create()
+                    .mapColor(MapColor.DARK_AQUA)
+                    .noCollision()
+                    .luminance(CaveVines.getLuminanceSupplier(14))
+                    .breakInstantly()
+                    .sounds(BlockSoundGroup.CAVE_VINES)
+                    .pistonBehavior(PistonBehavior.DESTROY)),
                     ModItemGroup.ALTERA_GROUP);
 
     private static Block registerBlock(String name, Block block, RegistryKey<ItemGroup> group) {

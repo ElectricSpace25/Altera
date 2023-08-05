@@ -5,5 +5,7 @@
   "block.altera.silver_ore": "Silver Ore",
   "block.altera.deepslate_silver_ore": "Deepslate Silver Ore",
   "block.altera.silver_block": "Block of Silver",
-  "item.altera.galaxy_berries": "Galaxy Berries"
+  "item.altera.galaxy_berries": "Galaxy Berries",
+  "block.altera.galaxy_vines": "Galaxy Vines",
+  "block.altera.galaxy_vines_plant": "Galaxy Vines Plant"
 }

@@ -1,13 +1,21 @@
-// 1.20.1	2023-08-04T21:32:12.2708926	Altera/Model Definitions
+// 1.20.1	2023-08-04T23:06:07.3316805	Altera/Model Definitions
+1070a23a388a66b70a210a6bea6df1c314207b64 assets\altera\models\block\galaxy_vines_plant.json
 37d313f6455472f781d1384ca3eaa37e9c7104bd assets\altera\models\item\galaxy_berries.json
 dee6114dfa8ce0148ed57ea2d7a4152e4fd707de assets\altera\blockstates\silver_ore.json
 bd6b4a8791eb158e5c39cb6e54e1836ec5005fe5 assets\altera\blockstates\deepslate_silver_ore.json
 f6a6b8019989d1253ab5efd85218c9a94aa58751 assets\altera\blockstates\silver_block.json
+7ef92059f26b91758d236ad43e083d2965bc5e0f assets\altera\blockstates\galaxy_vines.json
 b41205b41590154cb858dd7f514f789251a74fb3 assets\altera\models\block\deepslate_silver_ore.json
+9e28a1c458f1bd827d12582993b73d9cb0a7a5c4 assets\altera\blockstates\galaxy_vines_plant.json
 49cbb7d24ddafc16abd0312d8b711e02a2fddd72 assets\altera\models\item\silver_ingot.json
 5bd0d93cc787aa3b7658a4dc80df021ec87aaa07 assets\altera\models\item\deepslate_silver_ore.json
-7a8db8fc1dcc1aee069176f2d897516ca22663f6 assets\altera\models\item\silver_block.json
 2da6901e581f812ff3642bf99b8903bf8c7242c9 assets\altera\models\block\silver_ore.json
+7a8db8fc1dcc1aee069176f2d897516ca22663f6 assets\altera\models\item\silver_block.json
+256247eef79d16bbcc75fe56bcc2e1c724f55218 assets\altera\models\block\galaxy_vines.json
 229bc77575c7967a94e48306f7cf5df89d9d0022 assets\altera\models\item\silver_ore.json
 274a01fd4e51709a656ee70f1744a07c53a14cab assets\altera\models\block\silver_block.json
+170dd4768b41be4cd3e19068fc812fc236c34c69 assets\altera\models\item\galaxy_vines.json
+48848278fed648606fd042bda1e4f3992e3afe7c assets\altera\models\item\galaxy_vines_plant.json
+e85a6f0f4b73fc546dbd90f20be800cfe09a2802 assets\altera\models\block\galaxy_vines_lit.json
+1faf4b5ffc797a073206f899f66c075eac02be48 assets\altera\models\block\galaxy_vines_plant_lit.json
 962c0513442589a8daef3bd4b7796136999d0c8e assets\altera\models\item\raw_silver.json
