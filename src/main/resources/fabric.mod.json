@@ -24,6 +24,9 @@
 		],
 		"fabric-datagen": [
 			"cyanite.altera.AlteraModDataGenerator"
+		],
+		"terrablender": [
+			"cyanite.altera.AlteraMod"
 		]
 	},
 	"mixins": [
