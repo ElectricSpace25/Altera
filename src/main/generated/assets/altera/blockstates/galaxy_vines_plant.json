@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "berries=false": {
+      "model": "altera:block/galaxy_vines_plant"
+    },
+    "berries=true": {
+      "model": "altera:block/galaxy_vines_plant_lit"
+    }
+  }
+}
