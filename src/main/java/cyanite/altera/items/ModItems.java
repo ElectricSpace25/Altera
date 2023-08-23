@@ -20,6 +20,7 @@ public class ModItems {
     
     //Items
     public static final Item MIRROR = registerItem("mirror", new MirrorItem(new FabricItemSettings().maxCount(1)));
+    public static final Item MODEL_MIRROR = registerItem("model_mirror", new MirrorItem(new FabricItemSettings().maxCount(1)));
     public static final Item RAW_SILVER = registerItem("raw_silver", new Item(new FabricItemSettings()));
     public static final Item SILVER_INGOT = registerItem("silver_ingot", new Item(new FabricItemSettings()));
     public static final Item GALAXY_BERRIES = registerItem("galaxy_berries", new AliasedBlockItem(ModBlocks.GALAXY_VINES, new Item.Settings().food(ModFoodComponents.GALAXY_BERRIES)));
@@ -30,6 +31,7 @@ public class ModItems {
 
     public static void addItemsToItemGroup() {
         addToItemGroup(ModItemGroup.ALTERA_GROUP, MIRROR);
+        addToItemGroup(ModItemGroup.ALTERA_GROUP, MODEL_MIRROR);
         addToItemGroup(ModItemGroup.ALTERA_GROUP, RAW_SILVER);
         addToItemGroup(ModItemGroup.ALTERA_GROUP, SILVER_INGOT);
         addToItemGroup(ModItemGroup.ALTERA_GROUP, GALAXY_BERRIES);

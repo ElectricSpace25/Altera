@@ -44,5 +44,7 @@ public class AlteraMod implements ModInitializer, TerraBlenderApi {
 		SurfaceRuleManager.addSurfaceRules(SurfaceRuleManager.RuleCategory.OVERWORLD, MOD_ID, SurfaceRuleManager.getDefaultSurfaceRules(SurfaceRuleManager.RuleCategory.OVERWORLD));
 	}
 
+	//NOTE: Changes: added modeled mirror (need to fix missing texture), fixed galaxy vine texture, modified plagued lands biome
+
 
 }
