@@ -7,6 +7,7 @@ import cyanite.altera.items.ModItems;
 import cyanite.altera.networking.ModMessages;
 import cyanite.altera.world.biomes.ModRegion;
 import cyanite.altera.world.biomes.ModSurfaceRuleData;
+import cyanite.altera.world.dimensions.ModDimensions;
 import cyanite.altera.world.gen.ModWorldGeneration;
 import net.fabricmc.api.ModInitializer;
 
@@ -32,6 +33,7 @@ public class AlteraMod implements ModInitializer, TerraBlenderApi {
 		ModWorldGeneration.generateModWorldGen();
 		ModMessages.registerC2SPackets();
 		ModFlammableBlockRegistry.registerFlammableBlocks();
+		ModDimensions.registerModDimensions();
 	}
 
 	@Override

@@ -29,7 +29,7 @@ public class ModBlocks {
                     .mapColor(MapColor.STONE_GRAY)
                     .instrument(Instrument.BASEDRUM),
                     UniformIntProvider.create(0, 2)),
-                    ModItemGroup.ALTERA_GROUP);
+                    null);
 
     public static final Block DEEPSLATE_SILVER_ORE = registerBlock("deepslate_silver_ore",
             new ExperienceDroppingBlock(FabricBlockSettings.create()
@@ -48,28 +48,30 @@ public class ModBlocks {
                     .sounds(BlockSoundGroup.METAL)),
                     ModItemGroup.ALTERA_GROUP);
 
-    public static final Block GALAXY_VINES = registerBlock("galaxy_vines",
+    public static final Block GALAXY_VINES = registerBlockNoGroup("galaxy_vines",
             new GalaxyVinesHeadBlock(FabricBlockSettings.create()
                     .mapColor(MapColor.DARK_AQUA)
                     .ticksRandomly().noCollision()
                     .luminance(CaveVines.getLuminanceSupplier(14))
                     .breakInstantly()
                     .sounds(BlockSoundGroup.CAVE_VINES)
-                    .pistonBehavior(PistonBehavior.DESTROY)),
-                    ModItemGroup.ALTERA_GROUP);
+                    .pistonBehavior(PistonBehavior.DESTROY)));
 
-    public static final Block GALAXY_VINES_PLANT = registerBlock("galaxy_vines_plant",
+    public static final Block GALAXY_VINES_PLANT = registerBlockNoGroup("galaxy_vines_plant",
             new GalaxyVinesBodyBlock(FabricBlockSettings.create()
                     .mapColor(MapColor.DARK_AQUA)
                     .noCollision()
                     .luminance(CaveVines.getLuminanceSupplier(14))
                     .breakInstantly()
                     .sounds(BlockSoundGroup.CAVE_VINES)
-                    .pistonBehavior(PistonBehavior.DESTROY)),
-                    ModItemGroup.ALTERA_GROUP);
+                    .pistonBehavior(PistonBehavior.DESTROY)));
 
     private static Block registerBlock(String name, Block block, RegistryKey<ItemGroup> group) {
         registerBlockItem(name, block, group);
+        return Registry.register(Registries.BLOCK, new Identifier(AlteraMod.MOD_ID, name), block);
+    }
+
+    private static Block registerBlockNoGroup(String name, Block block) {
         return Registry.register(Registries.BLOCK, new Identifier(AlteraMod.MOD_ID, name), block);
     }
 
